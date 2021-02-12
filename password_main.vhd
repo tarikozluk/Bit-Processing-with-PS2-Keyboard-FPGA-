@@ -101,7 +101,7 @@ begin
     case state is      
         when showthesevenbit=>          
              LED <= std_logic_vector(bitadder(15 downto 0));
-             if BTNC >= '1' then
+             if BTNC = '1' then
                 state<=passwort;
                 end if;
         when oldbitfall=>
